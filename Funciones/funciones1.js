@@ -25,3 +25,13 @@ function miFuncionDosParamtros( nombre, edad) {
 
 miFuncionDosParamtros( "josé", 45); // Me llamo josé y tengo 45 años
 
+/****===================================================
+ * ===================================================== */
+
+// función que regresa dato
+function regresoNombre() {
+    return "Me llamo José ...";
+}
+
+regresoNombre();
+
