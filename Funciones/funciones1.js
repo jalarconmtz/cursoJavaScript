@@ -35,3 +35,35 @@ function regresoNombre() {
 
 regresoNombre();
 
+function nombre( nombre ) {
+    return nombre;
+}
+
+function apPaterno( apPaterno ) {
+    return apPaterno;
+}
+
+function edad( edad) {
+    return edad;
+}
+
+// se crean las varibles para guardar la información
+let miNombre = nombre('José');
+let miApPat = apPaterno('Alarcón');
+let miEdad = edad(40);
+
+console.log( miNombre + " " + miApPat + ", edad: " +miEdad); // José Alarcón, edad: 40
+
+/*** ========================================================================= 
+ * =========================================================================== */
+
+// funciones anónimas. Soin funciones, que en lugar de devolver un string, booleano, et.
+// puede regresar una función 
+
+ let regresaFuncion = function() {
+    console.log('Esta es una función anónima');
+ }
+
+ regresaFuncion(); //Esta es una función anónima
+
+
