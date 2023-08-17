@@ -67,3 +67,5 @@ console.log( miNombre + " " + miApPat + ", edad: " +miEdad); // José Alarcón, 
  regresaFuncion(); //Esta es una función anónima
 
 
+
+

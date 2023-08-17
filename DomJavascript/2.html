@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceder por name</title>
+    <style>
+        .azul {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="Cabecera">Ejemplo del dom para el uso de javascript</h1>
+    <p id="parrafo">Saludos</p>
+    <p id="parrafo2">Saludos 2</p>
+
+    <p class="azul">parrrafo color 1</p>
+    <p class="azul">parrafo color 2</p>
+
+    <script>
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`Número de parrafos: ${parrafos.length}`);
+        for (i = 0; i < parrafos.length;i++) {
+            console.log( parrafos[i].innerHTML);
+        }
+        // vamos a recuperar con la clase
+        let elementos = document.getElementsByClassName('azul');
+        console.log("número de elementos con clase: " + elementos.length);
+        // recorremos el arreglo
+        for(let elemento of elementos) {
+            console.log(elemento.innerHTML);
+        }
+    </script>
+    
+</body>
+</html>
