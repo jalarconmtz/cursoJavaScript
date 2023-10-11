@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+</head>
+<body>
+
+    <div class="row">
+        <button>Decir Hola</button>
+    </div>
+
+    <div class="row">
+        <p id="mensajedespedida"> Mensaje de despedida</p>
+    </div>
+
+    <div class="row">
+        <span name="seleccion_nombre">Mi elemento con nombre</span>
+    </div>
+    
+
+    <script>
+        // vamos a agregar de dos formas distintas eventos
+        const msjeBoton = document.querySelector('button');
+        function saludoBoton() {
+            alert("Hola!!...");
+        }
+        
+        msjeBoton.addEventListener('click', saludoBoton);
+
+        // vamos a poner con una función flecha
+        const saludoParrafo = ()=> alert('Bye, bye!!')
+        const msajeDespedida = document.querySelector('#mensajedespedida');
+        msajeDespedida.addEventListener('click', saludoParrafo);
+
+        // vampss a eleegir un ele,ento de html por el name
+        const elementoPorNombre = document.querySelector('[name="seleccion_nombre"]');
+        function mensajeParaNombreElemento() {
+            // obtenenmos el mensaje que esta dentro del elemento 
+            const elemento = document.querySelector('[name="seleccion_nombre"]')
+            const textoElemento = elemento.innerHTML;
+            alert(textoElemento);
+        }
+        elementoPorNombre.addEventListener('click', mensajeParaNombreElemento);
+
+
+
+    </script>
+</body>
+</html>

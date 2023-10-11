@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Lista de Tareas</title>
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <h1>Mis Tareas</h1>
+      <input id="ingresar-tarea">
+      <br>
+      <input id="ingresar-tarea2" onblur="modifica();">
+      <br>
+      <input type="text" id="res" >
+
+      
+      
+    </div>
+
+    <script>
+        function modifica(){
+            let id1 = document.getElementById('ingresar-tarea').value;
+            let id2 = document.getElementById('ingresar-tarea2').value;
+            //let id1 = $('#ingresar-tarea').val();
+            //let id2 = document.getElementById('ingresar-tarea2').innerHTML;
+            let res = document.getElementById('res');
+            let texto = id1 + id2
+            
+            res.value = texto;
+        }
+       
+
+    </script>
+  </body>
+</html>
